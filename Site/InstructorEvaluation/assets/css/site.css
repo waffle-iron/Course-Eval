@@ -1,0 +1,147 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body
+{
+	font-family: 'roboto', sans-serif;
+}
+body#bodySelector
+{
+	background: #157612;
+}
+
+.col-centered{
+float: none;
+margin: 0 auto;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 10em;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 6em;
+  background-color: #f5f5f5;
+}
+.container .text-muted {
+  margin: 1.5em 0;
+}
+
+/* Evaluation Page Styles */
+.disclaimer-text{
+	font-style: italic;
+}
+.headerTitle{
+	margin-bottom: 2em;
+}
+
+.disclaimer{
+	
+}
+
+/* For large screen */
+@media (min-width: 992px) {
+	.headerTitle{
+		margin-bottom: 10em;
+	}
+
+	.disclaimer{
+		margin-bottom: 2.5em;
+	}
+
+}
+b
+{
+	font-size: 1.40em;
+}
+
+.optionBtns
+{
+	font-size: 1em;
+
+}
+
+.optionDiv
+{
+	margin-bottom: 2.5em;
+	margin-top: .75em;
+}
+
+.textArea
+{
+	margin-bottom: 1em;
+	margin-top: 1.5em;
+}
+
+.radio-inline{
+	margin: 1em;
+}
+
+.questionText{
+	margin-left: 1.5em;
+}
+
+/* Thank You Page */
+.thanks{
+	margin-top: 25em;
+}
+/* End of Thank you Page */
+/* Login Template Start */
+
+/*Login Template End */
+
+/* Results page section */
+ .container > form,
+ .container > .card
+{
+	margin-top: 2.5em;
+	margin-bottom: 2.5em;
+	padding-top: 2.5em;
+	padding-bottom:  2em;	
+	border-radius: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+    background: #fff;
+    font-size: 1.25em;
+}
+
+.striped div.row:nth-child(even){
+  background-color: #dcdcdc;
+}
+.striped div.row:nth-child(odd){
+  background-color: #ececec;
+}
+
+/* For medium screen */    
+/*@media (min-width: 768px) {
+    .row :nth-child(4n), .row :nth-child(4n-1) {
+        background: #dcdcdc;
+    }
+    .row :nth-child(4n-2), .row :nth-child(4n-3) {
+        background: #aaaaaa;
+    }
+}*/
+
+/* For large screen */
+/*@media (min-width: 992px) {
+    .row :nth-child(6n), .row :nth-child(6n-1), .row :nth-child(6n-2) {
+        background: #dcdcdc;
+    }
+    .row :nth-child(6n-3), .row :nth-child(6n-4), .row :nth-child(6n-5) {
+        background: #aaaaaa;
+    }
+}*/
+
+.reportText{
+
+}
+/* End of Results Page section

@@ -1,0 +1,14 @@
+9/22/2016
+
+Description:
+I wanted to see what happens when you try to login incorrect creditials.
+
+From 
+http://evaluations.greenrivertech.net/InstructorEvaluation/Login
+Typed in random username and password
+
+
+Expected: an error message
+
+Action:
+A blank bullet point displayed on the screen above the login

@@ -1,0 +1,20 @@
+<div class="container well col-lg-12">
+	<div class="card">
+		<div class="container-fluid">
+			<div class="col-lg-8 col-lg-offset-2">
+				<h2>View Evaluations:</h2>
+			</div>
+			{~ if(count(@evaluation) > 0):~}
+			<repeat group="{{@evaluation}}" value="{{ @evaluationInfo}}">
+				<div class="col-lg-8 col-lg-offset-2 container-fluid form-group">
+					<a class="list-group-item" href="/InstructorEvaluation/report/{{@evaluationInfo.evaluationID}}">{{ @evaluationInfo.name}}{~ if(!empty(@evaluationInfo.section)): ~} - Section: {{@evaluationInfo.section}} {~ endif~} - {{@evaluationInfo.quarter}} Quarter - {{@evaluationInfo.year}} - Taken: {{@evaluationInfo.taken}} - Expiration: {{@evaluationInfo.expirationDate}}</a>
+				</div>
+			</repeat>
+			{~ else: ~}
+			<div class="container-fluid">
+				<p>I am sorry, there are no evaluations for you to review, please create one by selecting "Create Evaluation" in the navbar</p>
+			</div>
+			{~ endif ~}
+		</div>
+	</div>
+</div>

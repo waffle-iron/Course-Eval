@@ -1,0 +1,41 @@
+<div class="container well col-lg-12">
+	<div class="card">
+		<!-- <div class="row">
+			<span class='col-md-12'>{{ @evaluationHeader.name}} Quarter:{{@evaluationHeader.quarter}} Year:{{@evaluationHeader.year}} Section{{@evaluationHeader.section}}</span>
+		</div> -->
+		<repeat group="{{@evaluationQuestions}}" key="{{@questionNumber}}" value="{{ @question}}">
+			<div class="row-fluid form-group">
+				<h3 class='col-md-12 questionText'>{{ (@questionNumber + 1).": ". @question.questionText}}</h3>
+				
+				{~ if(!@question.isFillIn): ~}
+				<div class="container-fluid text-center">
+					<p class="col-md-2 ">Almost Always: {{@question.1}}</p>
+					<p class="col-md-2 ">Often: {{@question.2}}</p>
+					<p class="col-md-2 ">Sometimes: {{@question.3}}</p>
+					<p class="col-md-2 ">Rarely: {{@question.4}}</p>
+					<p class="col-md-2 ">Almost Never: {{@question.5}}</p>
+					<p class="col-md-2 ">N/A: {{@question.6}}</p>
+				</div>
+				{~ else: ~}
+				<div class="container-fluid">
+					<div class="striped col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+						<repeat group="{{@question.answers}}" value="{{@text}}">
+							<div class="row">
+								<div class="col-xs-12">
+									<p><strong>Student {{@text.coorelationID . ": "}}</strong>{{@text.textAnswer}}<p>
+								</div>
+							</div>
+						</repeat>
+					</div>
+				</div>
+				{~ endif ~}
+
+			</div>
+		</repeat>
+	</div>
+		<div class="col-lg-4">
+		<a class="btn btn-primary btn-lg" href="{{@siteRoot.'/reports'}}">View Evaluations</a>
+		</div>
+
+</div>
+
